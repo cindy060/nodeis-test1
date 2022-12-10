@@ -1,3 +1,7 @@
+
+//1.對題目有沒有想法
+//2.把想法用程式寫出來
+
 let doWork = function (job, timer, cb) {
     setTimeout(() => {
         let now = new Date();
