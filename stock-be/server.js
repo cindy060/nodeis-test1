@@ -15,6 +15,12 @@ let pool = mysql2.createPool({
   connectionLimit: 10,
 });
 
+//允許跨源存取
+//預設是全部開放
+// 也可以做部分限制，參考 npm cors 的文件
+const cors = require("cors");
+app.use(cors());
+
 // middleware => pipeline pattern
 
 //設定 express 處理靜態檔案
